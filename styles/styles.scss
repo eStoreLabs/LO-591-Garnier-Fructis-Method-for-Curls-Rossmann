@@ -51,7 +51,8 @@ $color-accent: #8168AB;
 
     font-family: $ff-main;
     overflow: hidden;
-    max-width: 998px;
+    max-width: 992px;
+    margin: auto;
 
     .es-title {
         text-transform: uppercase;
@@ -74,6 +75,10 @@ $color-accent: #8168AB;
                 @media (min-width: 576px) {
                     @include circle();
                     z-index: 1;
+                }
+
+                @media (min-width: 768px) {
+                    right: -9%;
                 }
             }
         }
@@ -178,6 +183,9 @@ $color-accent: #8168AB;
                 gap: 8px;
                 padding: 32px 16px;
             }
+            @media (min-width: 768px) {
+                padding: 48px 32px;
+            }
         }
 
         &__figure {
@@ -225,6 +233,10 @@ $color-accent: #8168AB;
         background-color: $color-main;
         margin-block: 8px;
         padding: 32px 16px;
+
+        @media (min-width: 768px) {
+            padding: 48px 32px;
+        }
 
         &__top {
             @media (min-width: 576px) {
@@ -298,6 +310,10 @@ $color-accent: #8168AB;
                 display: flex;
                 flex-flow: row-reverse;
             }
+
+            @media (min-width: 768px) {
+                font-size: 20px;
+            }
         }
 
         &__3 {
@@ -305,6 +321,20 @@ $color-accent: #8168AB;
                 display: flex;
                 flex-direction: row-reverse;
                 gap: 8px;
+            }
+
+            @media (min-width: 768px) {
+                margin-left: unset;
+                margin-top: unset;
+                position: relative;
+            }
+        }
+
+        &__arrowCtn {
+            @media (min-width: 768px) {
+                position: absolute;
+                top: -41%;
+                right: -65%;
             }
         }
 
@@ -314,6 +344,22 @@ $color-accent: #8168AB;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+            }
+
+            @media (min-width: 768px) {
+                position: relative;
+
+                &:before {
+                    content: "";
+                    height: 215px;
+                    width: 80px;
+                    background-image: url('../images/bracket.svg');
+                    position: absolute;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    top: 4%;
+                    left: -21%;
+                }
             }
         }
 
@@ -330,11 +376,14 @@ $color-accent: #8168AB;
             margin: auto;
             max-height: 200px;
 
-            @media (min-width: 576px) {
+            @media (min-width: 576px) and (max-width: 767px) {
                 max-height: 150px;
                 margin-top: -66%;
             }
+
         }
+
+
 
         &__percent {
             color: $color-accent;
@@ -357,6 +406,11 @@ $color-accent: #8168AB;
                 height: 150px;
             }
 
+            @media (min-width: 768px) {
+                width: 200px;
+                height: 200px;
+            }
+
             &:after {
                 content: "";
                 position: absolute;
@@ -369,10 +423,17 @@ $color-accent: #8168AB;
                 border-radius: 99px 0 0 99px;
                 transform: translateY(100%);
 
-                @media (min-width: 576px) {
+                @media (min-width: 576px) and (max-width: 767px) {
                     width: 50px;
                     height: 100px;
                     bottom: 25%;
+                }
+
+                @media (min-width: 768px) {
+                    width: 80px;
+                    height: 160px;
+                    bottom: 35%;
+                    left: 8%;
                 }
             }
         }
@@ -385,6 +446,12 @@ $color-accent: #8168AB;
 
             @media (min-width: 576px) {
                 top: 50%;
+            }
+
+            @media (min-width: 768px) {
+                scale: 1.3;
+                top: 40%;
+                left: 9%;
             }
         }
     }
@@ -407,6 +474,11 @@ $color-accent: #8168AB;
                 flex-direction: row;
                 align-items: flex-start;
             }
+
+            @media (min-width: 768px) {
+                justify-content: center;
+            }
+
         }
 
         &__single {
@@ -419,6 +491,11 @@ $color-accent: #8168AB;
             @media (min-width: 576px) {
                 flex-basis: 50%;
                 max-width: 49%;
+            }
+
+            @media (min-width: 768px) {
+                flex-basis: 25%;
+                max-width: 220px;
             }
         }
 
@@ -459,6 +536,33 @@ $color-accent: #8168AB;
             }
         }
 
+        &__gifCtn {
+            @media (min-width: 768px) {
+                padding: 32px 64px;
+                position: relative;
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    width: 200px;
+                    height: 75px;
+                    background-color: $color-main;
+                    top: -30px;
+                    left: 98px;
+                    z-index: -1;
+                }
+
+                &:after {
+                    @include circle();
+                    top: 3%;
+                    left: 0;
+                    z-index: -2;
+                    width: 175px;
+                    height: 175px;
+                }
+            }
+        }
+
     }
 
     .es-banner {
@@ -469,6 +573,10 @@ $color-accent: #8168AB;
             background-position: center;
             background-repeat: no-repeat;
             background-size: contain;
+        }
+
+        @media (min-width: 768px) {
+            height: 400px;
         }
 
         &__packs {
@@ -500,6 +608,15 @@ $color-accent: #8168AB;
             @media (min-width: 576px) {
                 padding-block: unset;
             }
+
+            @media (min-width: 768px) {
+                height: 400px;
+                display: flex;
+                align-content: center;
+                flex-wrap: wrap;
+                margin-left: auto;
+                margin-right: 13%;
+            }
         }
 
         &__box {
@@ -518,6 +635,8 @@ $color-accent: #8168AB;
                 max-width: 50%;
                 margin-left: auto;
             }
+
+
         }
 
         &__new {
@@ -526,6 +645,7 @@ $color-accent: #8168AB;
             font-size: 32px;
             font-weight: 400;
             @include gradient-bg();
+
             @media (min-width: 576px) {
                 font-size: 24px;
             }
