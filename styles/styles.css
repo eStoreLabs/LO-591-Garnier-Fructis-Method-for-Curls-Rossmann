@@ -38,6 +38,21 @@ body {
   background-color: #D9ECCA;
   position: relative;
 }
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-line--3:after {
+    content: "";
+    position: absolute;
+    top: -71%;
+    right: -16%;
+    z-index: -1;
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #8168AB;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+}
 #es-garnier.es-garnier .es-kv__left--photoCtn {
   margin-top: -32px;
 }
@@ -74,6 +89,11 @@ body {
   margin-top: -62px;
   margin-inline: auto;
 }
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-kv__textCtn {
+    margin-top: -81px;
+  }
+}
 #es-garnier.es-garnier .es-kv__text {
   text-transform: uppercase;
   font-weight: 800;
@@ -109,11 +129,26 @@ body {
   right: 20%;
   z-index: -1;
 }
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-kv__pill {
+    bottom: 8%;
+    right: 21%;
+  }
+}
 #es-garnier.es-garnier .es-results .es-title {
   background-color: #D9ECCA;
 }
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-results__BA {
+    display: flex;
+    gap: 8px;
+    padding: 32px 16px;
+  }
+}
 #es-garnier.es-garnier .es-results__figure {
   position: relative;
+  flex-basis: 50%;
+  margin: 0;
 }
 #es-garnier.es-garnier .es-results__imgCtn {
   overflow: hidden;
@@ -146,6 +181,16 @@ body {
   background-color: #D9ECCA;
   margin-block: 8px;
   padding: 32px 16px;
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-features__top {
+    display: flex;
+  }
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-features__header {
+    max-width: 47%;
+  }
 }
 #es-garnier.es-garnier .es-features__title {
   text-transform: uppercase;
@@ -195,6 +240,27 @@ body {
   font-weight: 800;
   margin-block: 32px;
 }
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-features__funky {
+    display: flex;
+    flex-flow: row-reverse;
+  }
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-features__3 {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 8px;
+  }
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-features__4 {
+    max-width: 47%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 #es-garnier.es-garnier .es-features__light {
   font-weight: 400;
 }
@@ -206,9 +272,20 @@ body {
   margin: auto;
   max-height: 200px;
 }
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-features__arrow {
+    max-height: 150px;
+    margin-top: -66%;
+  }
+}
 #es-garnier.es-garnier .es-features__percent {
   color: #8168AB;
   font-size: 40px;
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-features__percent {
+    font-size: 32px;
+  }
 }
 #es-garnier.es-garnier .es-features__square {
   aspect-ratio: 1/1;
@@ -216,6 +293,12 @@ body {
   position: relative;
   max-width: 300px;
   z-index: 1;
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-features__square {
+    width: 150px;
+    height: 150px;
+  }
 }
 #es-garnier.es-garnier .es-features__square:after {
   content: "";
@@ -229,11 +312,23 @@ body {
   border-radius: 99px 0 0 99px;
   transform: translateY(100%);
 }
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-features__square:after {
+    width: 50px;
+    height: 100px;
+    bottom: 25%;
+  }
+}
 #es-garnier.es-garnier .es-features__pill {
   position: absolute;
   top: 20%;
   left: 18%;
   z-index: 3;
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-features__pill {
+    top: 50%;
+  }
 }
 #es-garnier.es-garnier .es-use {
   padding-inline: 16px;
@@ -246,12 +341,25 @@ body {
   gap: 8px;
   margin-block: 24px;
 }
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-use__steps {
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+}
 #es-garnier.es-garnier .es-use__single {
   max-width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 24px;
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-use__single {
+    flex-basis: 50%;
+    max-width: 49%;
+  }
 }
 #es-garnier.es-garnier .es-use__img {
   position: relative;
@@ -283,6 +391,14 @@ body {
 #es-garnier.es-garnier .es-banner {
   background-color: #e1ebea;
 }
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-banner {
+    background-image: url("../images/banner.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
 #es-garnier.es-garnier .es-banner__packs {
   position: relative;
 }
@@ -299,8 +415,18 @@ body {
   background-repeat: no-repeat;
   animation: scale-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-banner__packs {
+    display: none;
+  }
+}
 #es-garnier.es-garnier .es-banner__brand {
   padding-block: 32px;
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-banner__brand {
+    padding-block: unset;
+  }
 }
 #es-garnier.es-garnier .es-banner__box {
   display: flex;
@@ -309,6 +435,16 @@ body {
   margin: 32px;
   border: 4px solid #f0f7e6;
   box-shadow: inset 0 0 1.3rem #d0ecb6, 0 0 1.3rem #d0ecb6;
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-banner__box {
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 32px;
+    max-width: 50%;
+    margin-left: auto;
+  }
 }
 #es-garnier.es-garnier .es-banner__new {
   font-style: italic;
@@ -320,9 +456,20 @@ body {
   -webkit-text-fill-color: transparent;
   background-size: cover;
 }
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-banner__new {
+    font-size: 24px;
+  }
+}
 #es-garnier.es-garnier .es-banner__img {
   max-width: 300px;
   margin-block: -24px;
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-banner__img {
+    max-width: 200px;
+    margin-top: -16px;
+  }
 }
 #es-garnier.es-garnier .es-banner__text {
   font-style: italic;
@@ -332,6 +479,26 @@ body {
   font-weight: 800;
   text-align: center;
   color: #8168AB;
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-banner__text {
+    font-size: 32px;
+    position: relative;
+    max-width: 200px;
+  }
+  #es-garnier.es-garnier .es-banner__text:before {
+    position: absolute;
+    right: -32px;
+    top: -10px;
+    content: "";
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("../images/badge.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: scale-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  }
 }
 #es-garnier.es-garnier .es-footer {
   padding-inline: 16px;
@@ -350,6 +517,7 @@ body {
 }
 #es-garnier.es-garnier .es-footer__img {
   margin: 0 auto;
+  max-width: 150px;
 }
 @media (min-width: 768px) {
   #es-garnier.es-garnier .es-footer__img {

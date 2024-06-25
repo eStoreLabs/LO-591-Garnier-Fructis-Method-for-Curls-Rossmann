@@ -68,6 +68,15 @@ $color-accent: #8168AB;
         height: 10px;
         background-color: $color-main;
         position: relative;
+
+        &--3 {
+            &:after {
+                @media (min-width: 576px) {
+                    @include circle();
+                    z-index: 1;
+                }
+            }
+        }
     }
 
     .es-kv {
@@ -107,6 +116,10 @@ $color-accent: #8168AB;
             max-width: 350px;
             margin-top: -62px;
             margin-inline: auto;
+
+            @media (min-width: 576px) {
+                margin-top: -81px;
+            }
         }
 
         &__text {
@@ -146,6 +159,11 @@ $color-accent: #8168AB;
             top: 6%;
             right: 20%;
             z-index: -1;
+
+            @media (min-width: 576px) {
+                bottom: 8%;
+                right: 21%;
+            }
         }
     }
 
@@ -154,9 +172,18 @@ $color-accent: #8168AB;
             background-color: $color-main;
         }
 
+        &__BA {
+            @media (min-width: 576px) {
+                display: flex;
+                gap: 8px;
+                padding: 32px 16px;
+            }
+        }
+
         &__figure {
             position: relative;
-
+            flex-basis: 50%;
+            margin: 0;
 
 
         }
@@ -198,6 +225,18 @@ $color-accent: #8168AB;
         background-color: $color-main;
         margin-block: 8px;
         padding: 32px 16px;
+
+        &__top {
+            @media (min-width: 576px) {
+                display: flex;
+            }
+        }
+
+        &__header {
+            @media (min-width: 576px) {
+                max-width: 47%;
+            }
+        }
 
         &__title {
             text-transform: uppercase;
@@ -254,6 +293,28 @@ $color-accent: #8168AB;
             line-height: 1.5;
             font-weight: 800;
             margin-block: 32px;
+
+            @media (min-width: 576px) {
+                display: flex;
+                flex-flow: row-reverse;
+            }
+        }
+
+        &__3 {
+            @media (min-width: 576px) {
+                display: flex;
+                flex-direction: row-reverse;
+                gap: 8px;
+            }
+        }
+
+        &__4 {
+            @media (min-width: 576px) {
+                max-width: 47%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
         }
 
         &__light {
@@ -268,11 +329,20 @@ $color-accent: #8168AB;
         &__arrow {
             margin: auto;
             max-height: 200px;
+
+            @media (min-width: 576px) {
+                max-height: 150px;
+                margin-top: -66%;
+            }
         }
 
         &__percent {
             color: $color-accent;
             font-size: 40px;
+
+            @media (min-width: 576px) {
+                font-size: 32px;
+            }
         }
 
         &__square {
@@ -281,6 +351,11 @@ $color-accent: #8168AB;
             position: relative;
             max-width: 300px;
             z-index: 1;
+
+            @media (min-width: 576px) {
+                width: 150px;
+                height: 150px;
+            }
 
             &:after {
                 content: "";
@@ -293,6 +368,12 @@ $color-accent: #8168AB;
                 border: 2px dashed #8168AB;
                 border-radius: 99px 0 0 99px;
                 transform: translateY(100%);
+
+                @media (min-width: 576px) {
+                    width: 50px;
+                    height: 100px;
+                    bottom: 25%;
+                }
             }
         }
 
@@ -302,7 +383,9 @@ $color-accent: #8168AB;
             left: 18%;
             z-index: 3;
 
-
+            @media (min-width: 576px) {
+                top: 50%;
+            }
         }
     }
 
@@ -318,6 +401,12 @@ $color-accent: #8168AB;
             align-items: center;
             gap: 8px;
             margin-block: 24px;
+
+            @media (min-width: 576px) {
+                flex-wrap: wrap;
+                flex-direction: row;
+                align-items: flex-start;
+            }
         }
 
         &__single {
@@ -326,6 +415,11 @@ $color-accent: #8168AB;
             flex-direction: column;
             align-items: center;
             gap: 24px;
+
+            @media (min-width: 576px) {
+                flex-basis: 50%;
+                max-width: 49%;
+            }
         }
 
         &__img {
@@ -370,6 +464,13 @@ $color-accent: #8168AB;
     .es-banner {
         background-color: #e1ebea;
 
+        @media (min-width: 576px) {
+            background-image: url("../images/banner.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
         &__packs {
             position: relative;
 
@@ -387,11 +488,18 @@ $color-accent: #8168AB;
                 -webkit-animation: scale-in-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
                 animation: scale-in-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
             }
+
+            @media (min-width: 576px) {
+                display: none;
+            }
         }
 
         &__brand {
             padding-block: 32px;
 
+            @media (min-width: 576px) {
+                padding-block: unset;
+            }
         }
 
         &__box {
@@ -401,6 +509,15 @@ $color-accent: #8168AB;
             margin: 32px;
             border: 4px solid #f0f7e6;
             box-shadow: inset 0 0 1.3rem $color-glow, 0 0 1.3rem $color-glow;
+
+            @media (min-width: 576px) {
+                border: none;
+                box-shadow: none;
+                margin: 0;
+                padding: 32px;
+                max-width: 50%;
+                margin-left: auto;
+            }
         }
 
         &__new {
@@ -409,11 +526,19 @@ $color-accent: #8168AB;
             font-size: 32px;
             font-weight: 400;
             @include gradient-bg();
+            @media (min-width: 576px) {
+                font-size: 24px;
+            }
         }
 
         &__img {
             max-width: 300px;
             margin-block: -24px;
+
+            @media (min-width: 576px) {
+                max-width: 200px;
+                margin-top: -16px;
+            }
         }
 
         &__text {
@@ -425,6 +550,26 @@ $color-accent: #8168AB;
             text-align: center;
             color: $color-accent;
 
+            @media (min-width: 576px) {
+                font-size: 32px;
+                position: relative;
+                max-width: 200px;
+
+                &:before {
+                    position: absolute;
+                    right: -32px;
+                    top: -10px;
+                    content: "";
+                    display: block;
+                    width: 60px;
+                    height: 60px;
+                    background-image: url("../images/badge.png");
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    -webkit-animation: scale-in-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                    animation: scale-in-center 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+                }
+            }
         }
     }
 
@@ -446,6 +591,7 @@ $color-accent: #8168AB;
 
         &__img {
             margin: 0 auto;
+            max-width: 150px;
 
             @media (min-width: 768px) {
                 margin-inline: auto;
