@@ -6,6 +6,8 @@ body {
 
 #es-garnier.es-garnier {
   font-family: "Montserrat", Tahoma, Verdana, sans-serif;
+  overflow: hidden;
+  max-width: 998px;
 }
 #es-garnier.es-garnier * {
   box-sizing: border-box;
@@ -18,6 +20,9 @@ body {
   margin: 0;
   padding: 0;
 }
+#es-garnier.es-garnier sup {
+  font-size: 0.6em;
+}
 #es-garnier.es-garnier .es-title {
   text-transform: uppercase;
   font-weight: 800;
@@ -28,11 +33,96 @@ body {
   text-wrap: balance;
   padding-block: 32px;
 }
+#es-garnier.es-garnier .es-line {
+  height: 10px;
+  background-color: #D9ECCA;
+  position: relative;
+}
+#es-garnier.es-garnier .es-kv__left--photoCtn {
+  margin-top: -32px;
+}
+#es-garnier.es-garnier .es-kv__right {
+  background-color: #D9ECCA;
+  margin: 16px;
+}
+#es-garnier.es-garnier .es-kv .es-line {
+  margin-block: 16px;
+}
+#es-garnier.es-garnier .es-kv .es-line--2:after {
+  content: "";
+  position: absolute;
+  top: -71%;
+  right: -16%;
+  z-index: -1;
+  width: 150px;
+  height: 150px;
+  border: 2px dashed #8168AB;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  left: -103px;
+}
+#es-garnier.es-garnier .es-kv__branding {
+  position: relative;
+}
+#es-garnier.es-garnier .es-kv__logoCtn {
+  width: 60%;
+  margin-left: auto;
+  margin-right: 0;
+}
+#es-garnier.es-garnier .es-kv__textCtn {
+  max-width: 350px;
+  margin-top: -62px;
+  margin-inline: auto;
+}
+#es-garnier.es-garnier .es-kv__text {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 35px;
+  line-height: 1.2;
+  text-align: center;
+  background-image: url("../images/gradient.png");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: cover;
+}
+#es-garnier.es-garnier .es-kv__text span {
+  font-weight: 300;
+  display: block;
+  font-size: 30px;
+  font-style: italic;
+  text-align: left;
+}
+#es-garnier.es-garnier .es-kv__packsCtn {
+  position: relative;
+  z-index: 1;
+}
+#es-garnier.es-garnier .es-kv__packs {
+  transition: all 200ms ease-in-out;
+}
+#es-garnier.es-garnier .es-kv__packs:hover {
+  scale: 1.1;
+}
+#es-garnier.es-garnier .es-kv__pill {
+  position: absolute;
+  transform: translateX(50%);
+  top: 6%;
+  right: 20%;
+  z-index: -1;
+}
 #es-garnier.es-garnier .es-results .es-title {
   background-color: #D9ECCA;
 }
 #es-garnier.es-garnier .es-results__figure {
   position: relative;
+}
+#es-garnier.es-garnier .es-results__imgCtn {
+  overflow: hidden;
+}
+#es-garnier.es-garnier .es-results__imgCtn img {
+  transition: all 200ms ease-in-out;
+}
+#es-garnier.es-garnier .es-results__imgCtn img:hover {
+  scale: 1.1;
 }
 #es-garnier.es-garnier .es-results__BA--text {
   position: absolute;
@@ -52,30 +142,124 @@ body {
   font-size: 18px;
   line-height: 1;
 }
-#es-garnier.es-garnier .es-line {
-  height: 10px;
+#es-garnier.es-garnier .es-features {
   background-color: #D9ECCA;
-  position: relative;
+  margin-block: 8px;
+  padding: 32px 16px;
 }
-#es-garnier.es-garnier .es-line:after {
+#es-garnier.es-garnier .es-features__title {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-style: italic;
+  text-wrap: balance;
+  font-size: 24px;
+  line-height: 1.3;
+  color: #8168AB;
+}
+#es-garnier.es-garnier .es-features__text {
+  line-height: 1.4;
+  text-wrap: balance;
+  padding-block: 16px;
+}
+#es-garnier.es-garnier .es-features__span {
+  font-weight: 800;
+}
+#es-garnier.es-garnier .es-features__imgCtn {
+  position: relative;
+  max-width: 250px;
+  margin: auto;
+}
+#es-garnier.es-garnier .es-features__imgCtn img {
+  transition: all 200ms ease-in-out;
+}
+#es-garnier.es-garnier .es-features__imgCtn img:hover {
+  scale: 1.1;
+}
+#es-garnier.es-garnier .es-features__BA {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-style: italic;
+  font-size: 16px;
+}
+#es-garnier.es-garnier .es-features__funky {
+  text-align: center;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 23px;
+  line-height: 1.5;
+  font-weight: 800;
+  margin-block: 32px;
+}
+#es-garnier.es-garnier .es-features__light {
+  font-weight: 400;
+}
+#es-garnier.es-garnier .es-features__plus {
+  font-size: 60px;
+  color: #8168AB;
+}
+#es-garnier.es-garnier .es-features__arrow {
+  margin: auto;
+  max-height: 200px;
+}
+#es-garnier.es-garnier .es-features__percent {
+  color: #8168AB;
+  font-size: 40px;
+}
+#es-garnier.es-garnier .es-features__square {
+  aspect-ratio: 1/1;
+  background-color: #FFF;
+  position: relative;
+  max-width: 300px;
+  z-index: 1;
+}
+#es-garnier.es-garnier .es-features__square:after {
   content: "";
   position: absolute;
-  top: -71%;
-  right: -16%;
-  z-index: -1;
-  width: 150px;
+  bottom: 50%;
+  left: 25%;
+  z-index: 2;
+  width: 75px;
   height: 150px;
   border: 2px dashed #8168AB;
-  border-radius: 50%;
-  transform: translateY(-50%);
+  border-radius: 99px 0 0 99px;
+  transform: translateY(100%);
+}
+#es-garnier.es-garnier .es-features__pill {
+  position: absolute;
+  top: 20%;
+  left: 18%;
+  z-index: 3;
 }
 #es-garnier.es-garnier .es-use {
   padding-inline: 16px;
   padding-block: 32px;
 }
+#es-garnier.es-garnier .es-use__steps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-block: 24px;
+}
+#es-garnier.es-garnier .es-use__single {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
 #es-garnier.es-garnier .es-use__img {
   position: relative;
-  margin-bottom: 24px;
+  max-width: 300px;
+  margin: auto;
+}
+#es-garnier.es-garnier .es-use__img:hover .es-use__img--product {
+  scale: 1.1;
 }
 #es-garnier.es-garnier .es-use__img--product {
   width: auto;
@@ -83,6 +267,7 @@ body {
   position: absolute;
   bottom: -3%;
   right: 1%;
+  transition: all 200ms ease-in-out;
 }
 #es-garnier.es-garnier .es-use__img--product3 {
   max-width: 150px;
@@ -91,7 +276,6 @@ body {
   text-wrap: balance;
   font-size: 16px;
   line-height: 1.4;
-  margin-bottom: 24px;
 }
 #es-garnier.es-garnier .es-use__text--bold {
   font-weight: 700;
@@ -134,6 +318,7 @@ body {
   background-image: url("../images/gradient.png");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  background-size: cover;
 }
 #es-garnier.es-garnier .es-banner__img {
   max-width: 300px;
@@ -158,6 +343,7 @@ body {
   font-family: inherit;
   font-weight: inherit;
   text-align: center;
+  text-wrap: balance;
   font-size: 13px;
   line-height: 18px;
   margin-block: 16px;
@@ -202,9 +388,9 @@ body {
     opacity: 1;
   }
 }
-#es-garnier.es-garnier .slide-in-fwd-center {
+#es-garnier.es-garnier .es-slide-in-fwd-center {
   animation: slide-in-fwd-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
-#es-garnier.es-garnier .scale-in-center {
+#es-garnier.es-garnier .es-scale-in-center {
   animation: scale-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }/*# sourceMappingURL=styles.css.map */
