@@ -85,15 +85,57 @@ $color-accent: #8168AB;
     }
 
     .es-kv {
+        @media (min-width: 576px) {
+            .es-title {
+                font-size: 20px;
+                text-align: left;
+                padding-left: 26px;
+                padding-top: 16px;
+                position: relative;
+                z-index: 2;
+
+            }
+
+            display: flex;
+            position: relative;
+        }
+
+        @media (min-width: 768px) {
+            .es-title {
+                font-size: 32px;
+            }
+        }
+
         &__left {
             &--photoCtn {
                 margin-top: -32px;
+
+                @media (min-width: 576px) {
+                    position: absolute;
+                    bottom: 0;
+                    width: 70%;
+                    z-index: 1;
+                }
+
+                @media (min-width: 768px) {
+                    left: 15px;
+                }
+            }
+
+            @media (min-width: 576px) {
+                width: 57%;
             }
         }
 
         &__right {
             background-color: $color-main;
             margin: 16px;
+
+            @media (min-width: 576px) {
+                width: 43%;
+                position: relative;
+                aspect-ratio: 1 / 1;
+            }
         }
 
         .es-line {
@@ -103,6 +145,20 @@ $color-accent: #8168AB;
                 &:after {
                     @include circle();
                     left: -103px;
+                }
+
+                @media (min-width: 576px) {
+                    display: none;
+                }
+            }
+
+            &--1 {
+                @media (min-width: 576px) {
+                    transform: rotate(180deg);
+                    height: 100%;
+                    width: 15px;
+                    margin-top: 0px;
+                    position: absolute;
                 }
             }
         }
@@ -115,6 +171,17 @@ $color-accent: #8168AB;
             width: 60%;
             margin-left: auto;
             margin-right: 0;
+
+            @media (min-width: 576px) {
+                width: 50%;
+                max-width: 140px;
+                margin-right: 5%;
+            }
+
+            @media (min-width: 768px) {
+                max-width: 111px;
+                margin-right: 4%;
+            }
         }
 
         &__textCtn {
@@ -123,8 +190,21 @@ $color-accent: #8168AB;
             margin-inline: auto;
 
             @media (min-width: 576px) {
-                margin-top: -81px;
+                margin-top: -41px;
+                margin-right: -17px;
+                max-width: 250px;
             }
+
+            @media (min-width: 730px) {
+                margin-top: -45px;
+                margin-right: 1px;
+            }
+
+            @media (min-width: 768px) {
+                max-width: 243px;
+                margin-top: -37px;
+            }
+
         }
 
         &__text {
@@ -135,18 +215,51 @@ $color-accent: #8168AB;
             text-align: center;
             @include gradient-bg();
 
+            @media (min-width: 576px) {
+                font-size: 24px;
+            }
+
+            @media (min-width: 768px) {
+                font-size: 22px;
+                margin-left: 36px;
+                text-align: right;
+                margin-right: 4px;
+            }
+
             span {
                 font-weight: 300;
                 display: block;
                 font-size: 30px;
                 font-style: italic;
                 text-align: left;
+
+                @media (min-width: 576px) {
+                    font-size: 20px;
+                }
+
+                @media (min-width: 768px) {
+                    font-size: 18px;
+                    font-weight: 400;
+                }
             }
         }
 
         &__packsCtn {
             position: relative;
             z-index: 1;
+
+            @media (min-width: 576px) {
+                position: absolute;
+                bottom: -16%;
+                left: -2%;
+                width: 74%;
+            }
+
+            @media (min-width: 768px) {
+                bottom: -10%;
+                left: -26%;
+                width: 94%;
+            }
         }
 
         &__packs {
@@ -167,7 +280,12 @@ $color-accent: #8168AB;
 
             @media (min-width: 576px) {
                 bottom: 8%;
-                right: 21%;
+                right: 4%;
+            }
+
+            @media (min-width: 768px) {
+                max-width: 237px;
+                top: 26%;
             }
         }
     }
@@ -238,6 +356,10 @@ $color-accent: #8168AB;
             margin-block: 16px;
             font-size: 18px;
             line-height: 1;
+        }
+
+        @media (min-width: 576px) {
+            margin-top: 16px;
         }
     }
 

@@ -59,12 +59,56 @@ body {
     right: -9%;
   }
 }
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-kv {
+    display: flex;
+    position: relative;
+  }
+  #es-garnier.es-garnier .es-kv .es-title {
+    font-size: 20px;
+    text-align: left;
+    padding-left: 26px;
+    padding-top: 16px;
+    position: relative;
+    z-index: 2;
+  }
+}
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-kv .es-title {
+    font-size: 32px;
+  }
+}
 #es-garnier.es-garnier .es-kv__left--photoCtn {
   margin-top: -32px;
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-kv__left--photoCtn {
+    position: absolute;
+    bottom: 0;
+    width: 70%;
+    z-index: 1;
+  }
+}
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-kv__left--photoCtn {
+    left: 15px;
+  }
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-kv__left {
+    width: 57%;
+  }
 }
 #es-garnier.es-garnier .es-kv__right {
   background-color: #D9ECCA;
   margin: 16px;
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-kv__right {
+    width: 43%;
+    position: relative;
+    aspect-ratio: 1/1;
+  }
 }
 #es-garnier.es-garnier .es-kv .es-line {
   margin-block: 16px;
@@ -82,6 +126,20 @@ body {
   transform: translateY(-50%);
   left: -103px;
 }
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-kv .es-line--2 {
+    display: none;
+  }
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-kv .es-line--1 {
+    transform: rotate(180deg);
+    height: 100%;
+    width: 15px;
+    margin-top: 0px;
+    position: absolute;
+  }
+}
 #es-garnier.es-garnier .es-kv__branding {
   position: relative;
 }
@@ -90,6 +148,19 @@ body {
   margin-left: auto;
   margin-right: 0;
 }
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-kv__logoCtn {
+    width: 50%;
+    max-width: 140px;
+    margin-right: 5%;
+  }
+}
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-kv__logoCtn {
+    max-width: 111px;
+    margin-right: 4%;
+  }
+}
 #es-garnier.es-garnier .es-kv__textCtn {
   max-width: 350px;
   margin-top: -62px;
@@ -97,7 +168,21 @@ body {
 }
 @media (min-width: 576px) {
   #es-garnier.es-garnier .es-kv__textCtn {
-    margin-top: -81px;
+    margin-top: -41px;
+    margin-right: -17px;
+    max-width: 250px;
+  }
+}
+@media (min-width: 730px) {
+  #es-garnier.es-garnier .es-kv__textCtn {
+    margin-top: -45px;
+    margin-right: 1px;
+  }
+}
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-kv__textCtn {
+    max-width: 243px;
+    margin-top: -37px;
   }
 }
 #es-garnier.es-garnier .es-kv__text {
@@ -111,6 +196,19 @@ body {
   -webkit-text-fill-color: transparent;
   background-size: cover;
 }
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-kv__text {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-kv__text {
+    font-size: 22px;
+    margin-left: 36px;
+    text-align: right;
+    margin-right: 4px;
+  }
+}
 #es-garnier.es-garnier .es-kv__text span {
   font-weight: 300;
   display: block;
@@ -118,9 +216,35 @@ body {
   font-style: italic;
   text-align: left;
 }
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-kv__text span {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-kv__text span {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
 #es-garnier.es-garnier .es-kv__packsCtn {
   position: relative;
   z-index: 1;
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-kv__packsCtn {
+    position: absolute;
+    bottom: -16%;
+    left: -2%;
+    width: 74%;
+  }
+}
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-kv__packsCtn {
+    bottom: -10%;
+    left: -26%;
+    width: 94%;
+  }
 }
 #es-garnier.es-garnier .es-kv__packs {
   transition: all 200ms ease-in-out;
@@ -138,7 +262,13 @@ body {
 @media (min-width: 576px) {
   #es-garnier.es-garnier .es-kv__pill {
     bottom: 8%;
-    right: 21%;
+    right: 4%;
+  }
+}
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-kv__pill {
+    max-width: 237px;
+    top: 26%;
   }
 }
 #es-garnier.es-garnier .es-results .es-title {
@@ -202,6 +332,11 @@ body {
   margin-block: 16px;
   font-size: 18px;
   line-height: 1;
+}
+@media (min-width: 576px) {
+  #es-garnier.es-garnier .es-results {
+    margin-top: 16px;
+  }
 }
 #es-garnier.es-garnier .es-features {
   background-color: #D9ECCA;
