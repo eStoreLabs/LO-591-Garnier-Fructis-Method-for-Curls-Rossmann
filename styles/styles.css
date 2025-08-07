@@ -36,7 +36,7 @@ body {
 }
 #es-garnier.es-garnier .es-line {
   height: 10px;
-  background-color: #D9ECCA;
+  background-color: #d9ecca;
   position: relative;
 }
 @media (min-width: 576px) {
@@ -48,7 +48,7 @@ body {
     z-index: -1;
     width: 150px;
     height: 150px;
-    border: 2px dashed #8168AB;
+    border: 2px dashed #8168ab;
     border-radius: 50%;
     transform: translateY(-50%);
     z-index: 1;
@@ -76,6 +76,7 @@ body {
 @media (min-width: 768px) {
   #es-garnier.es-garnier .es-kv .es-title {
     font-size: 32px;
+    max-width: 400px;
   }
 }
 #es-garnier.es-garnier .es-kv__left--photoCtn {
@@ -100,7 +101,7 @@ body {
   }
 }
 #es-garnier.es-garnier .es-kv__right {
-  background-color: #D9ECCA;
+  background-color: #d9ecca;
   margin: 16px;
 }
 @media (min-width: 576px) {
@@ -121,7 +122,7 @@ body {
   z-index: -1;
   width: 150px;
   height: 150px;
-  border: 2px dashed #8168AB;
+  border: 2px dashed #8168ab;
   border-radius: 50%;
   transform: translateY(-50%);
   left: -103px;
@@ -144,9 +145,9 @@ body {
   position: relative;
 }
 #es-garnier.es-garnier .es-kv__logoCtn {
-  width: 60%;
+  width: 55%;
   margin-left: auto;
-  margin-right: 0;
+  margin-right: 4%;
 }
 @media (min-width: 576px) {
   #es-garnier.es-garnier .es-kv__logoCtn {
@@ -157,62 +158,83 @@ body {
 }
 @media (min-width: 768px) {
   #es-garnier.es-garnier .es-kv__logoCtn {
-    max-width: 111px;
+    max-width: 130px;
     margin-right: 4%;
   }
 }
+@media (min-width: 950px) {
+  #es-garnier.es-garnier .es-kv__logoCtn {
+    max-width: 160px;
+  }
+}
 #es-garnier.es-garnier .es-kv__textCtn {
-  max-width: 350px;
-  margin-top: -62px;
+  max-width: 387px;
+  margin-top: -55px;
   margin-inline: auto;
+  max-width: -moz-max-content;
+  max-width: max-content;
+}
+@media (min-width: 400px) {
+  #es-garnier.es-garnier .es-kv__textCtn {
+    margin-top: -16%;
+  }
 }
 @media (min-width: 576px) {
   #es-garnier.es-garnier .es-kv__textCtn {
-    margin-top: -41px;
-    margin-right: -17px;
-    max-width: 250px;
+    margin-top: -17%;
   }
 }
 @media (min-width: 730px) {
   #es-garnier.es-garnier .es-kv__textCtn {
-    margin-top: -45px;
-    margin-right: 1px;
+    margin-top: -14%;
   }
 }
 @media (min-width: 768px) {
   #es-garnier.es-garnier .es-kv__textCtn {
     max-width: 243px;
-    margin-top: -37px;
+    margin-top: -12%;
+    margin-right: 0;
+  }
+}
+@media (min-width: 950px) {
+  #es-garnier.es-garnier .es-kv__textCtn {
+    margin-top: -10%;
+    max-width: 263px;
   }
 }
 #es-garnier.es-garnier .es-kv__text {
   text-transform: uppercase;
   font-weight: 800;
-  font-size: 35px;
+  font-size: 22px;
   line-height: 1.2;
-  text-align: center;
   background-image: url("../images/gradient.png");
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: cover;
 }
+@media (min-width: 400px) {
+  #es-garnier.es-garnier .es-kv__text {
+    font-size: 30px;
+  }
+}
 @media (min-width: 576px) {
   #es-garnier.es-garnier .es-kv__text {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 @media (min-width: 768px) {
   #es-garnier.es-garnier .es-kv__text {
+    font-size: 20px;
+  }
+}
+@media (min-width: 950px) {
+  #es-garnier.es-garnier .es-kv__text {
     font-size: 22px;
-    margin-left: 36px;
-    text-align: right;
-    margin-right: 4px;
   }
 }
 #es-garnier.es-garnier .es-kv__text span {
-  font-weight: 300;
+  font-weight: 500;
   display: block;
-  font-size: 30px;
   font-style: italic;
   text-align: left;
 }
@@ -241,9 +263,14 @@ body {
 }
 @media (min-width: 768px) {
   #es-garnier.es-garnier .es-kv__packsCtn {
-    bottom: -10%;
-    left: -26%;
-    width: 94%;
+    bottom: -9%;
+    left: -29%;
+    width: 86%;
+  }
+}
+@media (min-width: 850px) {
+  #es-garnier.es-garnier .es-kv__packsCtn {
+    left: -31%;
   }
 }
 #es-garnier.es-garnier .es-kv__packs {
@@ -267,12 +294,24 @@ body {
 }
 @media (min-width: 768px) {
   #es-garnier.es-garnier .es-kv__pill {
-    max-width: 237px;
-    top: 26%;
+    max-width: 211px;
+    top: 24%;
+  }
+}
+@media (min-width: 850px) {
+  #es-garnier.es-garnier .es-kv__pill {
+    max-width: 240px;
+  }
+}
+@media (min-width: 950px) {
+  #es-garnier.es-garnier .es-kv__pill {
+    max-width: 265px;
+    top: 23%;
+    right: 0%;
   }
 }
 #es-garnier.es-garnier .es-results .es-title {
-  background-color: #D9ECCA;
+  background-color: #d9ecca;
 }
 #es-garnier.es-garnier .es-results__BA {
   display: flex;
@@ -296,20 +335,19 @@ body {
 #es-garnier.es-garnier .es-results__figure {
   position: relative;
   width: 100%;
-  max-width: 350px;
   margin: auto;
   margin: 0;
 }
 #es-garnier.es-garnier .es-results__imgCtn {
   overflow: hidden;
-  max-width: 350px;
   aspect-ratio: 1/1;
   margin: auto;
 }
 #es-garnier.es-garnier .es-results__imgCtn img {
   aspect-ratio: 1/1;
-  -o-object-fit: contain;
-     object-fit: contain;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
   transition: all 200ms ease-in-out;
 }
 #es-garnier.es-garnier .es-results__imgCtn img:hover {
@@ -339,7 +377,7 @@ body {
   }
 }
 #es-garnier.es-garnier .es-features {
-  background-color: #D9ECCA;
+  background-color: #d9ecca;
   margin-block: 8px;
   padding: 32px 16px;
 }
@@ -365,7 +403,7 @@ body {
   text-wrap: balance;
   font-size: 24px;
   line-height: 1.3;
-  color: #8168AB;
+  color: #8168ab;
 }
 #es-garnier.es-garnier .es-features__text {
   line-height: 1.4;
@@ -473,7 +511,7 @@ body {
 }
 #es-garnier.es-garnier .es-features__plus {
   font-size: 60px;
-  color: #8168AB;
+  color: #8168ab;
 }
 #es-garnier.es-garnier .es-features__arrow {
   margin: auto;
@@ -486,7 +524,7 @@ body {
   }
 }
 #es-garnier.es-garnier .es-features__percent {
-  color: #8168AB;
+  color: #8168ab;
   font-size: 40px;
 }
 @media (min-width: 576px) {
@@ -496,7 +534,7 @@ body {
 }
 #es-garnier.es-garnier .es-features__square {
   aspect-ratio: 1/1;
-  background-color: #FFF;
+  background-color: #fff;
   position: relative;
   max-width: 300px;
   z-index: 1;
@@ -530,7 +568,7 @@ body {
   z-index: 2;
   width: 75px;
   height: 150px;
-  border: 2px dashed #8168AB;
+  border: 2px dashed #8168ab;
   border-radius: 99px 0 0 99px;
   transform: translateY(100%);
 }
@@ -608,7 +646,7 @@ body {
 }
 @media (min-width: 768px) {
   #es-garnier.es-garnier .es-use__single {
-    flex-basis: 25%;
+    flex-basis: 24%;
     max-width: 220px;
   }
 }
@@ -628,8 +666,18 @@ body {
   right: 1%;
   transition: all 200ms ease-in-out;
 }
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-use__img--product {
+    max-height: 130px;
+  }
+}
 #es-garnier.es-garnier .es-use__img--product3 {
   max-width: 150px;
+}
+@media (min-width: 768px) {
+  #es-garnier.es-garnier .es-use__img--product3 {
+    max-width: 100px;
+  }
 }
 #es-garnier.es-garnier .es-use__text {
   text-wrap: balance;
@@ -661,7 +709,7 @@ body {
     position: absolute;
     width: 200px;
     height: 75px;
-    background-color: #D9ECCA;
+    background-color: #d9ecca;
     top: -30px;
     left: 98px;
     z-index: -1;
@@ -674,7 +722,7 @@ body {
     z-index: -1;
     width: 150px;
     height: 150px;
-    border: 2px dashed #8168AB;
+    border: 2px dashed #8168ab;
     border-radius: 50%;
     transform: translateY(-50%);
     top: 3%;
@@ -720,7 +768,6 @@ body {
     align-content: center;
     flex-wrap: wrap;
     margin-left: auto;
-    margin-right: 13%;
   }
 }
 #es-garnier.es-garnier .es-banner__box {
@@ -760,12 +807,6 @@ body {
   max-width: 300px;
   margin-block: -24px;
 }
-@media (min-width: 576px) {
-  #es-garnier.es-garnier .es-banner__img {
-    max-width: 200px;
-    margin-top: -16px;
-  }
-}
 #es-garnier.es-garnier .es-banner__text {
   font-style: italic;
   text-transform: uppercase;
@@ -773,22 +814,23 @@ body {
   line-height: 1;
   font-weight: 800;
   text-align: center;
-  color: #8168AB;
+  color: #8168ab;
 }
 @media (min-width: 576px) {
   #es-garnier.es-garnier .es-banner__text {
     font-size: 32px;
     position: relative;
     max-width: 200px;
+    left: -2%;
   }
   #es-garnier.es-garnier .es-banner__text:before {
     position: absolute;
-    right: -32px;
-    top: -10px;
+    right: -38px;
+    top: -17px;
     content: "";
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 55px;
+    height: 55px;
     background-image: url("../images/badge.png");
     background-size: contain;
     background-repeat: no-repeat;
